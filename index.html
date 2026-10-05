@@ -93,10 +93,25 @@
     .modal-content {
       transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease-out;
     }
+    body {
+      background-color: #000;
+    }
+    body > section:not(:first-of-type),
+    body > footer {
+      background-color: #000;
+    }
+    .hero-background {
+      min-height: max(calc(100svh - 5rem), 56.2637vw);
+      background-color: #000;
+      background-image: url('/hacktoberfest-background.png');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
   </style>
 </head>
 
-<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-brand-500/30 selection:text-white min-h-screen flex flex-col">
+<body class="bg-black text-zinc-100 antialiased selection:bg-brand-500/30 selection:text-white min-h-screen flex flex-col">
 
   <!-- ========================================================================= -->
   <!-- 1. STICKY NAVIGATION BAR                                                  -->
@@ -200,14 +215,7 @@
   <!-- ========================================================================= -->
   <!-- 2. HERO SECTION                                                           -->
   <!-- ========================================================================= -->
-  <section class="relative pt-16 pb-20 md:pt-28 md:pb-32 overflow-hidden">
-    <!-- Subtle Background Glows -->
-    <div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-600/15 rounded-full blur-[140px] opacity-75"></div>
-    <div class="pointer-events-none absolute top-1/3 -left-32 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px]"></div>
-    <div class="pointer-events-none absolute top-1/2 -right-32 w-96 h-96 bg-accent-500/10 rounded-full blur-[120px]"></div>
-
-    <!-- Background Grid Pattern -->
-    <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#27272a08_1px,transparent_1px),linear-gradient(to_bottom,#27272a08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+  <section class="hero-background relative pt-16 pb-20 md:pt-28 md:pb-32 overflow-hidden">
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
       
