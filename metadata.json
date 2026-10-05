@@ -1,6 +1,0 @@
-{
-  "name": "ApexHack 2026 - Hackathon Template",
-  "description": "A modern, sleek, single-page static hackathon website template built with Tailwind CSS, Plus Jakarta Sans, and Vanilla JavaScript.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
